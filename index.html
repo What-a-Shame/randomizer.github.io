@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What a Shame - Equipos</title>
+    <link rel="stylesheet" href="librerias/bootstrap.min.css">
+    <script type="text/javascript" src="librerias/jquery.min.js"></script>
+    <script type="text/javascript" src="librerias/bootstrap.min.js"></script>
+    <script type="text/javascript" src="librerias/toast.js"></script>
+    <script type="text/javascript" src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-dark">
+    <!-- Modal -->
+    <div class="modal fade inicio" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Esto es Insurrealista</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="jugador" class="form-label">Jugador</label>
+                            <input type="text" class="form-control" id="jugador">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-warning" id="añadir">Añadir</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Equipos -->
+    <div class="container-md mt-5">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-2">
+                <table class="table table-striped table-dark table-bordered" id="equipo1">
+                    <thead>
+                        <tr>
+                            <th>Equipo 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2">
+                <img class="img-fluid" src="versus.png">
+            </div>
+            <div class="col-md-2">
+                <table class="table table-striped table-dark table-bordered" id="equipo2">
+                    <thead>
+                        <tr>
+                            <th>Equipo 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Botones -->
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <form action="./index.html" class="col-1">
+                <input type="submit" class="btn btn-success" id="empezar" value="Empezar">
+            </form>
+            <form action="./index.html" class="col-1">
+                <input type="submit" class="btn btn-danger" id="resetear" value="Resetear">
+            </form>
+        </div>
+    </div>
+    <!-- Jugadores -->
+    <div class="container-md mt-5">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-2">
+                <table class="table table-striped table-dark table-bordered" id="participantes">
+                    <thead>
+                        <tr>
+                            <th>Participantes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
